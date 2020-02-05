@@ -137,8 +137,8 @@ html {
 /* SECTION DEPARTEMEN */
 .section__departemen {
   padding: 2.5rem;
-  background-color: aquamarine;
-  height: 85vh;
+  /* background-color: aquamarine; */
+  height: 60rem;
 }
 
 .departemen__title {
@@ -163,12 +163,15 @@ html {
 
 .departemen__card {
   width: 100%;
-  background-color: wheat;
+  background-color: white;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* padding: .5rem; */
+
+  box-shadow: .5rem .5rem 1rem .1rem rgba(0,0,0,0.3);
 }
 
 .departemen__card-image-container {
@@ -208,7 +211,7 @@ html {
 /* SECTION JOIN US */
 
 .section__join-us {
-  background-color: salmon;
+  /* background-color: salmon; */
   overflow: hidden;
   position: relative;
 }
@@ -216,7 +219,7 @@ html {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem;
   z-index: 1;
   position: relative;
 }
@@ -282,4 +285,4 @@ html {
   top: 95%;
   left: 85%;
   z-index: 0;
-} 
+}
