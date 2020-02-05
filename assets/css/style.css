@@ -136,8 +136,10 @@ html {
 
 /* SECTION DEPARTEMEN */
 .section__departemen {
-  padding: 0 2.5rem;
+  padding: 2.5rem;
   margin: 5rem 0;
+  background-color: aquamarine;
+  height: 85vh;
 }
 
 .departemen__title {
@@ -175,10 +177,21 @@ html {
 }
 .departement__card-caption-container {
   width: 75%;
-  margin-left: 1rem;
+  margin: .5rem 1rem;
 }
 
 .departemen__card-logo {
   width: 100%;
   height: auto;
 }
+
+.section__banner-image {
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+
