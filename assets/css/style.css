@@ -286,3 +286,19 @@ html {
   left: 85%;
   z-index: 0;
 }
+
+
+/* SECTION FOOTER */
+.section__footer {
+  background-color: black;
+}
+
+.footer__image-container {
+  width: 5rem;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.footer__logo {
+  width: 100%;
+}
