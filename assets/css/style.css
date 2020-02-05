@@ -137,7 +137,6 @@ html {
 /* SECTION DEPARTEMEN */
 .section__departemen {
   padding: 2.5rem;
-  margin: 5rem 0;
   background-color: aquamarine;
   height: 85vh;
 }
@@ -177,13 +176,24 @@ html {
 }
 .departement__card-caption-container {
   width: 75%;
-  margin: .5rem 1rem;
+  margin: 1rem;
 }
 
 .departemen__card-logo {
   width: 100%;
   height: auto;
 }
+
+.departemen__card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.departemen__card-caption {
+  font-size: 1.3rem;
+}
+
+/* SECTION BANNER */
 
 .section__banner-image {
   width: 100%;
@@ -195,3 +205,81 @@ html {
 }
 
 
+/* SECTION JOIN US */
+
+.section__join-us {
+  background-color: salmon;
+  overflow: hidden;
+  position: relative;
+}
+.join-us__caption-container {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 2.5rem 0;
+  z-index: 1;
+  position: relative;
+}
+
+.join-us__caption {
+  /* buat ngilangin karena defaultnya ada marginnya */
+  margin: 0; 
+}
+
+.join-us__button-group {
+  width: 100%;
+  margin: auto;
+  color: coral;
+  text-align: center;
+  padding: 0 8.5rem;
+  padding-bottom: 4.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.join-us__button, .join-us__button:hover{
+  text-decoration: none;
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  display: block;
+}
+
+.join-us__button-join, .join-us__button-join:hover {
+  color: white;
+}
+
+.join-us__button-join {
+  margin-bottom: 1.5rem;
+  background-color: rgb(40, 170, 73);
+  border: .2rem solid rgb(40, 170, 73);
+}
+
+.join-us__button-join:hover {
+  background-color: rgb(37, 185, 74);
+  border: .2rem solid rgb(37, 185, 74);
+}
+
+.join-us__button-more {
+  color: rgb(40, 170, 73);
+  background-color: white;
+  border: .2rem solid rgb(40, 170, 73);
+}
+
+.join-us__button-more:hover {
+  color: rgb(37, 185, 74);
+  border: .2rem solid rgb(37, 185, 74);
+}
+
+.join-us__circle--md {
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 95%;
+  left: 85%;
+  z-index: 0;
+} 
