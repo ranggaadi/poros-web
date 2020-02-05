@@ -61,9 +61,11 @@ html {
 }
 
 .header__logo {
-    width: 100%;
+    width: auto;
     height: 100%;
     filter: grayscale(100%);
+    object-fit: cover;
+    object-position: 80% 50%;
 }
 
 .circle--lg {
@@ -126,11 +128,50 @@ html {
 /* SECTION DEPARTEMEN */
 .section__departemen {
     padding: 0 2.5rem;
-    margin-top: 4rem;
+    margin: 5rem 0;
 }
 
 .departemen__title {
     font-weight: 700;
-    color: rgb(7, 214, 0);
+    color: rgb(0, 128, 11);
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
+
+.departemen__caption {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.departemen__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+.departemen__card {
+    width: 100%;
+    background-color: wheat;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.departemen__card-image-container {
+    width: 25%;
+}
+.departement__card-caption-container {
+    width: 75%;
+    margin-left: 1rem;
+}
+
+.departemen__card-logo {
+    width: 100%;
+    height: auto;
+}
+
