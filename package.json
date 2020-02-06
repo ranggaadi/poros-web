@@ -1,0 +1,15 @@
+{
+  "name": "poros-web",
+  "version": "1.0.0",
+  "description": "front-end web poros",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass" : "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "compile:sass" : "node-sass assets/sass/main.scss assets/css/style.css"
+  },
+  "author": "poros",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
