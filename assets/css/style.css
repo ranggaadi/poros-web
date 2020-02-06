@@ -297,8 +297,26 @@ html {
   width: 5rem;
   margin: auto;
   padding-top: 2rem;
+  padding-bottom: 1rem;
+
 }
 
 .footer__logo {
   width: 100%;
+}
+
+.footer__media-container {
+  width: 60%;
+  /* background-color: thistle; */
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 2.5rem 0;
+  border-top: .1rem solid #fff;
+}
+
+.footer__icon {
+  display: inline-block;
+  width: 2rem;
+  height: auto;
 }
