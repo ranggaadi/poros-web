@@ -139,6 +139,8 @@ html {
   padding: 2.5rem;
   /* background-color: aquamarine; */
   height: 60rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .departemen__title {
@@ -159,6 +161,8 @@ html {
   grid-template-rows: auto auto auto;
   row-gap: 1.5rem;
   grid-row-gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .departemen__card {
@@ -196,6 +200,29 @@ html {
   font-size: 1.3rem;
 }
 
+.departemen__circle--md {
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 90%;
+  left: 18%;
+  z-index: 0;
+}
+
+.departemen__circle--sm {
+  background-color: rgb(40, 170, 73);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 43%;
+  left: 98%;
+  z-index: 0;
+}
 /* SECTION BANNER */
 
 .section__banner-image {
