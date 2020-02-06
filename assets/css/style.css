@@ -2,7 +2,6 @@
  REMEMBER, NO PIXELS !!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
 /* base */
 html {
   font-size: 10px;
@@ -28,8 +27,6 @@ html {
   overflow: hidden;
 }
 
-
-
 /* 
 *
 * 
@@ -37,7 +34,6 @@ html {
 *
 *
 */
-
 
 /* navbar */
 .navbar-brand {
@@ -187,7 +183,7 @@ html {
   align-items: center;
   /* padding: .5rem; */
 
-  box-shadow: .5rem .5rem 1rem .1rem rgba(0,0,0,0.3);
+  box-shadow: 0.5rem 0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
 .departemen__card-image-container {
@@ -246,7 +242,6 @@ html {
   height: auto;
 }
 
-
 /* SECTION JOIN US */
 
 .section__join-us {
@@ -265,7 +260,7 @@ html {
 
 .join-us__caption {
   /* buat ngilangin karena defaultnya ada marginnya */
-  margin: 0; 
+  margin: 0;
 }
 
 .join-us__button-group {
@@ -279,39 +274,41 @@ html {
   z-index: 1;
 }
 
-.join-us__button, .join-us__button:hover{
+.join-us__button,
+.join-us__button:hover {
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: block;
 }
 
-.join-us__button-join, .join-us__button-join:hover {
+.join-us__button-join,
+.join-us__button-join:hover {
   color: white;
 }
 
 .join-us__button-join {
   margin-bottom: 1.5rem;
   background-color: rgb(40, 170, 73);
-  border: .2rem solid rgb(40, 170, 73);
+  border: 0.2rem solid rgb(40, 170, 73);
 }
 
 .join-us__button-join:hover {
   background-color: rgb(37, 185, 74);
-  border: .2rem solid rgb(37, 185, 74);
+  border: 0.2rem solid rgb(37, 185, 74);
 }
 
 .join-us__button-more {
   color: rgb(40, 170, 73);
   background-color: white;
-  border: .2rem solid rgb(40, 170, 73);
+  border: 0.2rem solid rgb(40, 170, 73);
 }
 
 .join-us__button-more:hover {
   color: rgb(37, 185, 74);
-  border: .2rem solid rgb(37, 185, 74);
+  border: 0.2rem solid rgb(37, 185, 74);
 }
 
 .join-us__circle--md {
@@ -326,7 +323,6 @@ html {
   z-index: 0;
 }
 
-
 /* SECTION FOOTER */
 .section__footer {
   background-color: black;
@@ -337,7 +333,6 @@ html {
   margin: auto;
   padding-top: 2rem;
   padding-bottom: 1rem;
-
 }
 
 .footer__logo {
@@ -351,7 +346,7 @@ html {
   display: flex;
   justify-content: space-around;
   padding: 1rem 0 2.5rem 0;
-  border-top: .1rem solid #fff;
+  border-top: 0.1rem solid #fff;
 }
 
 .footer__icon {
@@ -367,9 +362,6 @@ html {
 *
 */
 
-
-
-
 /* 
 *
 * 
@@ -382,16 +374,16 @@ html {
   padding-bottom: 4rem;
   overflow: hidden;
   position: relative;
+  min-height: calc(100vh - 42.85px - 45px);
 }
-
 
 /* ILLUSTRATION  */
 
 .find-us__illustration-container {
-  width: 65%;
+  max-width: 200px;
   margin: auto;
   /* background-color: teal; */
-  padding: 2.5rem 0;
+  padding: 2.5rem 2rem;
 }
 
 .find-us__illust {
@@ -426,13 +418,15 @@ html {
   margin-bottom: 2rem;
 }
 
-.find-us__address-title, .find-us__email-title {
+.find-us__address-title,
+.find-us__email-title {
   font-size: 1.3rem;
   font-weight: 700;
   color: #808080;
 }
 
-.find-us__address-caption, .find-us__email-caption {
+.find-us__address-caption,
+.find-us__email-caption {
   margin: 0;
   font-size: 1.3rem;
 }
@@ -444,7 +438,7 @@ html {
   font-size: 1.3rem;
 }
 
-.find-us__address-link:hover{
+.find-us__address-link:hover {
   color: rgb(37, 185, 74);
   font-weight: 700;
   text-decoration: none;
