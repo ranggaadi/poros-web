@@ -378,6 +378,12 @@ html {
 *
 */
 
+.section__find-us {
+  padding-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
 
 /* ILLUSTRATION  */
 
@@ -394,3 +400,81 @@ html {
 }
 
 /*  */
+
+/* FIND US CONTAINER  */
+
+.find-us__content {
+  padding: 0 2.5rem;
+}
+
+.find-us__content--main {
+  margin-bottom: 2rem;
+}
+
+.find-us__title {
+  font-weight: 700;
+  color: rgb(0, 128, 11);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.find-us__caption {
+  font-size: 1.3rem;
+}
+
+.find-us__address {
+  margin-bottom: 2rem;
+}
+
+.find-us__address-title, .find-us__email-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #808080;
+}
+
+.find-us__address-caption, .find-us__email-caption {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.find-us__address-link {
+  color: rgb(40, 170, 73);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.find-us__address-link:hover{
+  color: rgb(37, 185, 74);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.find-us__circle--md {
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 85%;
+  z-index: 0;
+}
+
+/* SECTION FOOTER MIN */
+
+.section__footer-min {
+  background-color: black;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foooter-min__copyright {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0; /* untuk reset */
+}
