@@ -2,6 +2,7 @@
  REMEMBER, NO PIXELS !!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 /* base */
 html {
   font-size: 10px;
@@ -26,6 +27,17 @@ html {
 .no-overflow {
   overflow: hidden;
 }
+
+
+
+/* 
+*
+* 
+* HOMEPAGE SECTION
+*
+*
+*/
+
 
 /* navbar */
 .navbar-brand {
@@ -343,7 +355,26 @@ html {
 }
 
 .footer__icon {
-  display: inline-block;
   width: 2rem;
   height: auto;
 }
+
+/* 
+*
+* 
+* END OF HOMEPAGE SECTION
+*
+*
+*/
+
+
+
+
+/* 
+*
+* 
+* END OF HOMEPAGE SECTION
+*
+*
+*/
+
