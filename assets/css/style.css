@@ -33,7 +33,7 @@ html {
 /* 
 *
 * 
-* HOMEPAGE SECTION
+* HOMEPAGE PAGE
 *
 *
 */
@@ -362,7 +362,7 @@ html {
 /* 
 *
 * 
-* END OF HOMEPAGE SECTION
+* END OF HOMEPAGE PAGE
 *
 *
 */
@@ -373,8 +373,24 @@ html {
 /* 
 *
 * 
-* END OF HOMEPAGE SECTION
+* FIND US SECTION
 *
 *
 */
 
+
+/* ILLUSTRATION  */
+
+.find-us__illustration-container {
+  width: 65%;
+  margin: auto;
+  /* background-color: teal; */
+  padding: 2.5rem 0;
+}
+
+.find-us__illust {
+  width: 100%;
+  height: auto;
+}
+
+/*  */
