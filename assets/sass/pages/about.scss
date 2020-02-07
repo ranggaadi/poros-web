@@ -1,90 +1,82 @@
-
 .section__blogs {
-    // background-color: wheat;
+  // background-color: wheat;
 }
 
 .blogs__illustration-container {
-    width: 65%;
-    margin: auto;
-    /* background-color: teal; */
-    padding: 2.5rem 0;
+  width: 65%;
+  margin: auto;
+  /* background-color: teal; */
+  padding: 2.5rem 0;
 }
 
 .blogs__illust {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .blogs__content-container {
-    padding: 0 2.5rem;
+  padding: 0 2.5rem;
 }
 
 .blogs__content-title {
-    font-weight: 700;
-    color: rgb(40, 170, 73);
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .blogs__content-caption {
-    font-size: 3rem;
-    font-weight: 700;
-    // padding: rem 0;
-    position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  // padding: rem 0;
+  position: relative;
 }
 
 .blogs__content-text {
-    &--1 {
-        display: inline-block;
-        margin-bottom: 0;
-    }
-    &--2 {
-        display: block;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 0;
-    }
-}
-
-.blogs__underlined {
-    width: 8rem;
-    height: 1.5rem;
-    background-color:  rgb(255, 214, 51);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 67%;
-    top: 88%;
-    z-index: 0;
+  &--1 {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  &--2 {
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+  }
 }
 
 .section__footer-min {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  //   position: absolute;
+  //   bottom: 0;
+  width: 100%;
 }
-
 
 // SECTION CIRCLE CONTAINER
 
 .section__circle-container {
-    width: 100%;
-    height: 30vh;
-    // background-color: yellowgreen;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  min-height: 31vh;
+  // background-color: yellowgreen;
+  overflow: hidden;
+  position: relative;
+  //   z-index: ;
 }
 
 .blogs__circle--md {
-    background-color: rgb(255, 214, 51);
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 85%;
-    left: 83%;
-    z-index: 0;
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 83%;
+  z-index: 0;
 }
 
-
 // FOOTER ADA DI joinUS.scss
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 45.1333px);
+}
