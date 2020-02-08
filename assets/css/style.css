@@ -271,8 +271,7 @@ html {
 
 .pretend-container {
   position: relative;
-  min-height: calc(100vh - 45.1333px);
-  width: 100%; }
+  min-height: calc(100vh - 51.9833px); }
 
 /* 
 *
@@ -571,7 +570,8 @@ html {
 .section__find-us {
   height: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  min-height: calc(100vh - 60.1333px); }
 
 /* ILLUSTRATION  */
 .find-us__illustration-container {
