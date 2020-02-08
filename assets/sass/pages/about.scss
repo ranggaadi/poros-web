@@ -1,89 +1,99 @@
-
 // ILLUSTRATION //
 .about__illustration-container {
-    width: 65%;
-    margin: auto;
-    padding: 2.5rem 0;
+  width: 65%;
+  margin: auto;
+  padding: 2.5rem 0;
 }
 
 .about__illust {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 
 //* ABOUT CONTAINER  */
 
 .about__content-container {
-    padding: 0 2.5rem 5rem 2.5rem;
+  padding: 0 2.5rem 5rem 2.5rem;
 }
-
 
 // ABOUT CONTENT
 .about__content--main {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about__title {
-    font-weight: 700;
-    color: rgb(40, 170, 73);
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-  
-.about__caption {
-    font-size: 1.3rem;
-    text-align: justify;
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
+.about__caption {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.blogs__circle--md {
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 83%;
+}
 
 // ABOUT CAROUSEL
 
-.about__carousel-btn--hidden, 
-.about__carousel-btn--hidden:hover, 
+.about__carousel-btn--hidden,
+.about__carousel-btn--hidden:hover,
 .about__carousel-btn--hidden:visited,
-.about__carousel-btn--hidden:link{
-    opacity: 0;
+.about__carousel-btn--hidden:link {
+  opacity: 0;
+}
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 5.19833rem);
 }
 
 .about__carousel-container {
-    margin: 3rem 0;
-    border-radius: 1rem;
-    overflow: hidden;
+  margin: 3rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-
 
 // ABOUT TUJUAN VISI MISI
 .about__card-container {
-
 }
 
 .about__card {
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    background-color: white;
-    border: .2rem solid red;
-    text-align: justify;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 0.2rem solid red;
+  text-align: justify;
 }
 
 .about__card:not(:last-child) {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about__card-title {
-    font-size: 1.5rem;
-    color: rgb(40, 170, 73);
-    font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(40, 170, 73);
+  font-weight: 700;
 }
 
 .about__card-caption {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .about__card-point-container {
-    display: flex;
+  display: flex;
 }
 
 .about__card-point-number {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }

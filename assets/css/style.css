@@ -28,7 +28,8 @@ html {
   background-image: linear-gradient(90deg, #ffd633, #ffd633);
   background-repeat: no-repeat;
   background-size: 100% 0.4em;
-  background-position: 0 90%; }
+  background-position: 0 90%;
+  padding: 0 1.5px 0 1.5px; }
 
 .about__illustration-container {
   width: 65%;
@@ -55,11 +56,25 @@ html {
   font-size: 1.3rem;
   text-align: justify; }
 
+.blogs__circle--md {
+  background-color: #ffd633;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 85%;
+  left: 83%; }
+
 .about__carousel-btn--hidden,
 .about__carousel-btn--hidden:hover,
 .about__carousel-btn--hidden:visited,
 .about__carousel-btn--hidden:link {
   opacity: 0; }
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 5.19833rem); }
 
 .about__carousel-container {
   margin: 3rem 0;
@@ -156,8 +171,11 @@ html {
 *
 */
 /* navbar */
+.navbar {
+  padding: 0.8rem 1.7rem; }
+
 .navbar-brand {
-  width: 8%;
+  width: 28px;
   height: auto; }
 
 .custom-btn {
@@ -463,16 +481,16 @@ html {
 *
 */
 .section__find-us {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   overflow: hidden;
   position: relative; }
 
 /* ILLUSTRATION  */
 .find-us__illustration-container {
-  width: 65%;
+  max-width: 20.678rem;
   margin: auto;
   /* background-color: teal; */
-  padding: 2.5rem 0; }
+  padding: 1.5rem; }
 
 .find-us__illust {
   width: 100%;
@@ -481,7 +499,7 @@ html {
 /*  */
 /* FIND US CONTAINER  */
 .find-us__content {
-  padding: 0 2.5rem; }
+  padding: 0 1.6rem; }
 
 .find-us__content--main {
   margin-bottom: 2rem; }
@@ -503,7 +521,7 @@ html {
 
 .find-us__address-title,
 .find-us__email-title {
-  font-size: 1.3rem;
+  font-size: 1.32rem;
   font-weight: 700;
   color: #808080; }
 
@@ -527,10 +545,10 @@ html {
 .find-us__circle--md {
   background-color: #ffd633;
   border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
+  width: 16.9rem;
+  height: 16.9rem;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   top: 100%;
   left: 85%; }
 
