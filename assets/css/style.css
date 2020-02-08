@@ -598,9 +598,9 @@ html {
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .find-us__illustration-container {
-      padding: 0;
+      padding: 0 3rem 0 0;
       margin: 0;
-      max-width: 30%; } }
+      max-width: 35rem; } }
 
 .find-us__illust {
   width: 100%;
