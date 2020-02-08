@@ -3,6 +3,10 @@
 @import "base/base.scss";
 @import "base/util.scss";
 
+@import "components/footer-min";
+@import "components/footer";
+@import "components/navbar";
+
 @import "pages/about.scss";
 @import "pages/blogs.scss";
 @import "pages/home.scss";

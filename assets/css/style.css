@@ -213,7 +213,9 @@ html {
 
 .pretend-container {
   position: relative;
-  min-height: calc(100vh - 45.1333px); }
+  min-height: calc(100vh - 45.1333px);
+  width: 100%;
+  background-color: red; }
 
 /* 
 *
@@ -551,7 +553,7 @@ html {
 *
 */
 .section__find-us {
-  padding-bottom: 2rem;
+  height: 100%;
   overflow: hidden;
   position: relative; }
 
