@@ -40,7 +40,7 @@ html {
   height: auto; }
 
 .about__content-container {
-  padding: 0 2.5rem; }
+  padding: 0 2.5rem 5rem 2.5rem; }
 
 .about__content--main {
   margin-bottom: 2rem; }
@@ -55,9 +55,16 @@ html {
   font-size: 1.3rem;
   text-align: justify; }
 
+.about__carousel-btn--hidden,
+.about__carousel-btn--hidden:hover,
+.about__carousel-btn--hidden:visited,
+.about__carousel-btn--hidden:link {
+  opacity: 0; }
+
 .about__carousel-container {
-  background-color: red;
-  border-radius: 1rem; }
+  margin: 3rem 0;
+  border-radius: 1rem;
+  overflow: hidden; }
 
 .blogs__illustration-container {
   width: 65%;
