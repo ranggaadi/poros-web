@@ -13,7 +13,7 @@
 //* ABOUT CONTAINER  */
 
 .about__content-container {
-  padding: 0 2.5rem 5rem 2.5rem;
+  padding: 0 2.5rem 0rem 2.5rem;
 }
 
 // ABOUT CONTENT
@@ -94,6 +94,63 @@
   display: flex;
 }
 
+.about__card-point-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .about__card-point-number {
   margin: 0 1rem;
+}
+
+
+
+// ABOUT DEPARTEMEN.
+
+.about__departemen-container {
+    padding: 2.5rem 0;
+}
+
+.about__departemen-title {
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about__img-bagan-container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+
+.about__img-bagan {
+  width: 100%;
+}
+
+.about__departemen-card {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 214, 51);
+  margin-top: 2rem;
+}
+
+.about__departemen-paragraph {
+  font-size: 1.3rem;
+  text-align: justify;
+
+  &--1 {
+    margin-bottom: 2rem;
+  }
+}
+
+// ABOUT IMAGE BANNER
+
+.about__img-banner-container {
+  padding: 0 0 5rem 0;
+  width: 100%;
+  margin: auto;
+}
+
+.about__img-banner {
+  width: 100%;
 }

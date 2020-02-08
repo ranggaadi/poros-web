@@ -41,7 +41,7 @@ html {
   height: auto; }
 
 .about__content-container {
-  padding: 0 2.5rem 5rem 2.5rem; }
+  padding: 0 2.5rem 0rem 2.5rem; }
 
 .about__content--main {
   margin-bottom: 2rem; }
@@ -85,7 +85,7 @@ html {
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   background-color: white;
-  border: .2rem solid red;
+  border: 0.2rem solid red;
   text-align: justify; }
 
 .about__card:not(:last-child) {
@@ -102,8 +102,48 @@ html {
 .about__card-point-container {
   display: flex; }
 
+.about__card-point-container:not(:last-child) {
+  margin-bottom: 1rem; }
+
 .about__card-point-number {
   margin: 0 1rem; }
+
+.about__departemen-container {
+  padding: 2.5rem 0; }
+
+.about__departemen-title {
+  font-weight: 700;
+  color: #28aa49;
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.about__img-bagan-container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0rem; }
+
+.about__img-bagan {
+  width: 100%; }
+
+.about__departemen-card {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffd633;
+  margin-top: 2rem; }
+
+.about__departemen-paragraph {
+  font-size: 1.3rem;
+  text-align: justify; }
+  .about__departemen-paragraph--1 {
+    margin-bottom: 2rem; }
+
+.about__img-banner-container {
+  padding: 0 0 5rem 0;
+  width: 100%;
+  margin: auto; }
+
+.about__img-banner {
+  width: 100%; }
 
 .blogs__illustration-container {
   width: 65%;
