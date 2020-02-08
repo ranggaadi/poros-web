@@ -24,12 +24,12 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   //     @media only screen and (max-width: 56.25em) { @content }
   // }
 
-  @if $breakpoint == tb-land {
-    // 75 == 1200px / 16px
-    @media only screen and (max-width: 75em) {
-      @content;
-    }
-  }
+//   @if $breakpoint == tb-land {
+//     // 75 == 1200px / 16px
+//     @media only screen and (max-width: 75em) {
+//       @content;
+//     }
+//   }
 
   // @if $breakpoint == big-d {
   //     // 112.5 == 1800px / 16px

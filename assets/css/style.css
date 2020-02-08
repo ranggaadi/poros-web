@@ -571,14 +571,27 @@ html {
   height: 100%;
   overflow: hidden;
   position: relative;
-  min-height: calc(100vh - 60.1333px); }
+  min-height: calc(100vh - 60.1333px);
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .section__find-us {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 15rem 8rem 15rem; } }
 
 /* ILLUSTRATION  */
 .find-us__illustration-container {
   max-width: 20.678rem;
   margin: auto;
   /* background-color: teal; */
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__illustration-container {
+      padding: 0;
+      margin: 0;
+      max-width: 30%; } }
 
 .find-us__illust {
   width: 100%;
@@ -587,22 +600,38 @@ html {
 /*  */
 /* FIND US CONTAINER  */
 .find-us__content {
-  padding: 0 1.6rem; }
+  padding: 0 1.6rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__content {
+      padding: 0; } }
 
 .find-us__content--main {
   margin-bottom: 2rem; }
 
 .find-us__content-container {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__content-container {
+      margin-bottom: unset; } }
 
 .find-us__title {
   font-weight: 700;
   color: #28aa49;
   font-size: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__title {
+      font-size: 3.5rem; } }
 
 .find-us__caption {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__caption {
+      font-size: 1.5rem; } }
 
 .find-us__address {
   margin-bottom: 2rem; }
@@ -611,24 +640,35 @@ html {
 .find-us__email-title {
   font-size: 1.32rem;
   font-weight: 700;
-  color: #808080; }
+  color: #808080;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__address-title,
+    .find-us__email-title {
+      font-size: 1.5rem; } }
 
 .find-us__address-caption,
 .find-us__email-caption {
   margin: 0;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__address-caption,
+    .find-us__email-caption {
+      font-size: 1.5rem; } }
 
 .find-us__address-link {
   color: #28aa49;
   font-weight: 700;
   text-decoration: none;
-  font-size: 1.3rem; }
-
-.find-us__address-link:hover {
-  color: #25b94a;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  .find-us__address-link:hover {
+    color: #25b94a;
+    text-decoration: none; }
+  @media only screen and (min-width: 64em) {
+    .find-us__address-link {
+      font-size: 1.5rem; } }
 
 .find-us__circle--md {
   background-color: #ffd633;
@@ -638,6 +678,12 @@ html {
   position: absolute;
   transform: translate(-50%, -75%);
   top: 100%;
-  left: 85%; }
+  left: 85%;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .find-us__circle--md {
+      width: 25rem;
+      height: 25rem;
+      left: 95%; } }
 
 /* SECTION FOOTER MIN */

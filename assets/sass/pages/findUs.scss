@@ -11,6 +11,13 @@
   overflow: hidden;
   position: relative;
   min-height: calc(100vh - 60.1333px);
+
+  @include respon(desktop) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15rem 8rem 15rem;
+  }
 }
 
 /* ILLUSTRATION  */
@@ -20,6 +27,12 @@
   margin: auto;
   /* background-color: teal; */
   padding: 1.5rem;
+
+  @include respon(desktop){
+    padding: 0;
+    margin: 0;
+    max-width: 30%;
+  }
 }
 
 .find-us__illust {
@@ -33,6 +46,10 @@
 
 .find-us__content {
   padding: 0 1.6rem;
+
+  @include respon(desktop) {
+    padding: 0;
+  }
 }
 
 .find-us__content--main {
@@ -41,6 +58,10 @@
 
 .find-us__content-container {
   margin-bottom: 4rem;
+
+  @include respon(desktop) {
+    margin-bottom: unset;
+  }
 }
 
 .find-us__title {
@@ -48,10 +69,18 @@
   color: rgb(40, 170, 73);
   font-size: 3rem;
   margin-bottom: 2rem;
+
+  @include respon(desktop) {
+    font-size: 3.5rem;
+  }
 }
 
 .find-us__caption {
   font-size: 1.3rem;
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .find-us__address {
@@ -63,12 +92,20 @@
   font-size: 1.32rem;
   font-weight: 700;
   color: #808080;
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .find-us__address-caption,
 .find-us__email-caption {
   margin: 0;
   font-size: 1.3rem;
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .find-us__address-link {
@@ -76,13 +113,15 @@
   font-weight: 700;
   text-decoration: none;
   font-size: 1.3rem;
-}
 
-.find-us__address-link:hover {
-  color: rgb(37, 185, 74);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.3rem;
+  &:hover {
+    color: rgb(37, 185, 74);
+    text-decoration: none;
+  }
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .find-us__circle--md {
@@ -94,6 +133,12 @@
   transform: translate(-50%, -75%);
   top: 100%;
   left: 85%;
+
+  @include respon(desktop) {
+    width: 25rem;
+    height: 25rem;
+    left: 95%;
+  }
 }
 
 /* SECTION FOOTER MIN */
