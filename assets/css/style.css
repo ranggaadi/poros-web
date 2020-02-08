@@ -30,6 +30,35 @@ html {
   background-size: 100% 0.4em;
   background-position: 0 90%; }
 
+.about__illustration-container {
+  width: 65%;
+  margin: auto;
+  padding: 2.5rem 0; }
+
+.about__illust {
+  width: 100%;
+  height: auto; }
+
+.about__content-container {
+  padding: 0 2.5rem; }
+
+.about__content--main {
+  margin-bottom: 2rem; }
+
+.about__title {
+  font-weight: 700;
+  color: #28aa49;
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.about__caption {
+  font-size: 1.3rem;
+  text-align: justify; }
+
+.about__carousel-container {
+  background-color: red;
+  border-radius: 1rem; }
+
 .blogs__illustration-container {
   width: 65%;
   margin: auto;
