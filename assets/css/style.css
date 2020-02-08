@@ -66,6 +66,30 @@ html {
   border-radius: 1rem;
   overflow: hidden; }
 
+.about__card {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: .2rem solid red;
+  text-align: justify; }
+
+.about__card:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.about__card-title {
+  font-size: 1.5rem;
+  color: #28aa49;
+  font-weight: 700; }
+
+.about__card-caption {
+  font-size: 1.3rem; }
+
+.about__card-point-container {
+  display: flex; }
+
+.about__card-point-number {
+  margin: 0 1rem; }
+
 .blogs__illustration-container {
   width: 65%;
   margin: auto;
