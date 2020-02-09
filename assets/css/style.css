@@ -224,29 +224,65 @@ html {
 .about__img-banner {
   width: 100%; }
 
+.section__blogs {
+  overflow: hidden;
+  height: calc(100vh - 51.9833px - 40px);
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .section__blogs {
+      height: calc(100vh - 56px - 40px); } }
+
+.blogs__main-content {
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__main-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: calc(100vh - 200px);
+      width: 50%;
+      margin: auto; } }
+
 .blogs__illustration-container {
   width: 65%;
   margin: auto;
   /* background-color: teal; */
-  padding: 2.5rem 0; }
+  padding: 2.5rem 0;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__illustration-container {
+      padding: 0 3rem 0 0;
+      margin: 0;
+      max-width: 35rem; } }
 
 .blogs__illust {
   width: 100%;
   height: auto; }
 
 .blogs__content-container {
-  padding: 0 2.5rem; }
+  padding: 0 2.5rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__content-container {
+      padding: 0; } }
 
 .blogs__content-title {
   font-weight: 700;
   color: #28aa49;
   font-size: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__content-title {
+      font-size: 3.5rem; } }
 
 .blogs__content-caption {
   font-size: 3rem;
   font-weight: 700;
-  position: relative; }
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__content-caption {
+      font-size: 3.5rem; } }
 
 .blogs__content-text--1 {
   display: inline-block;
@@ -254,29 +290,27 @@ html {
 
 .blogs__content-text--2 {
   display: block;
-  position: relative;
   z-index: 1;
   margin-bottom: 0; }
 
 .section__footer-min {
   width: 100%; }
 
-.section__circle-container {
-  width: 100%;
-  min-height: 31vh;
-  overflow: hidden;
-  position: relative; }
-
 .blogs__circle--md {
   background-color: #ffd633;
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
-  position: absolute;
+  position: relative;
   transform: translate(-50%, -50%);
-  top: 85%;
-  left: 83%;
-  z-index: 0; }
+  top: 30%;
+  left: 80%;
+  z-index: 0;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .blogs__circle--md {
+      top: 10%;
+      left: 97%; } }
 
 .pretend-container {
   position: relative;
