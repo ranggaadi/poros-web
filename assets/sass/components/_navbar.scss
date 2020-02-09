@@ -6,12 +6,67 @@
   width: 28px;
   height: auto;
 }
-.custom-btn {
-  width: 40%;
-  margin: 0 auto;
+
+.custom__navbar {
+  padding: 1rem 2.5rem;
 }
+
+.custom__navbar-toggler {
+  border: none;
+  padding: 0;
+  &-icon {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+  }
+}
+
+.custom__navbar-nav {
+  text-align: center;
+}
+
+.custom__nav-item {
+  font-size: 1.5rem;
+
+  @include respon(desktop) {
+    &:not(:last-child){
+      margin: 0 2rem 0 0;
+    }
+  }
+}
+
+.custom__nav-link:hover {
+  color: rgb(40, 170, 73);
+}
+
+.custom__button {
+  background-color: rgb(40, 170, 73);
+  border-radius: .3rem;
+  padding: .5rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: all .3s ease;
+  // width: 50%;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(37, 185, 74);
+    transform: scale(1.1);
+  }
+}
+
+// buat ngilangim EFFECT
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(40, 170, 73);;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transition: all .4s ease;
+  color: black;
+}
+
 .navbar__logo--text {
   font-weight: 700;
   padding: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
