@@ -152,17 +152,53 @@ html {
 .about__illustration-container {
   width: 65%;
   margin: auto;
-  padding: 2.5rem 0; }
+  padding: 2.5rem 0;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__illustration-container {
+      max-width: 35rem;
+      margin: unset;
+      padding: 2.5rem 3rem 2.5rem 0; } }
 
 .about__illust {
   width: 100%;
   height: auto; }
 
+.about__responsive-container--1 {
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__responsive-container--1 {
+      height: calc(100vh - 61.4px);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; } }
+
+.about__responsive-container--2 {
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__responsive-container--2 {
+      height: 80vh;
+      width: 80%;
+      margin: auto; } }
+
+.about__responsive-container--3 {
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__responsive-container--3 {
+      height: 60%;
+      width: 60%;
+      margin: auto; } }
+
 .about__content-container {
   padding: 0 2.5rem 0rem 2.5rem; }
 
 .about__content--main {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__content--main {
+      margin-bottom: unset;
+      max-width: 35rem; } }
 
 .about__title {
   font-weight: 700;
@@ -190,14 +226,15 @@ html {
 .about__carousel-btn--hidden:link {
   opacity: 0; }
 
-.pretend-container {
-  position: relative;
-  min-height: calc(100vh - 5.19833rem); }
-
 .about__carousel-container {
   margin: 3rem 0;
   border-radius: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__carousel-container {
+      height: 100%;
+      width: auto; } }
 
 .about__card {
   padding: 1rem 1.5rem;
@@ -262,6 +299,10 @@ html {
 
 .about__img-banner {
   width: 100%; }
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 5.19833rem); }
 
 .section__blogs {
   overflow: hidden;

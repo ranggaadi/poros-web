@@ -3,6 +3,12 @@
   width: 65%;
   margin: auto;
   padding: 2.5rem 0;
+
+  @include respon(desktop) {
+    max-width: 35rem;
+    margin: unset;
+    padding: 2.5rem 3rem 2.5rem 0;
+  }
 }
 
 .about__illust {
@@ -12,6 +18,34 @@
 
 //* ABOUT CONTAINER  */
 
+.about__responsive-container {
+  &--1 {
+    @include respon(desktop) {
+      // max-width: 60%;
+      height: calc(100vh - 61.4px);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &--2 {
+    @include respon(desktop) {
+      height: 80vh;
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  &--3 {
+    @include respon(desktop) {
+      height: 60%;
+      width: 60%;
+      margin: auto;
+    }
+  }
+}
+
 .about__content-container {
   padding: 0 2.5rem 0rem 2.5rem;
 }
@@ -19,6 +53,11 @@
 // ABOUT CONTENT
 .about__content--main {
   margin-bottom: 2rem;
+
+  @include respon(desktop) {
+    margin-bottom: unset;
+    max-width: 35rem;
+  }
 }
 
 .about__title {
@@ -53,15 +92,24 @@
   opacity: 0;
 }
 
-.pretend-container {
-  position: relative;
-  min-height: calc(100vh - 5.19833rem);
+
+.about__carousel-indicators {
+
+  // @include respon(desktop) {
+  //   position: relative;
+  //   top: 30rem;
+  // }
 }
 
 .about__carousel-container {
   margin: 3rem 0;
   border-radius: 1rem;
   overflow: hidden;
+
+  @include respon(desktop) {
+    height: 100%;
+    width: auto;
+  }
 }
 
 // ABOUT TUJUAN VISI MISI
@@ -102,12 +150,10 @@
   margin: 0 1rem;
 }
 
-
-
 // ABOUT DEPARTEMEN.
 
 .about__departemen-container {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .about__departemen-title {
@@ -153,4 +199,9 @@
 
 .about__img-banner {
   width: 100%;
+}
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 5.19833rem);
 }
