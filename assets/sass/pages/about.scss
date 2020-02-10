@@ -21,11 +21,12 @@
 .about__responsive-container {
   &--1 {
     @include respon(desktop) {
-      // max-width: 60%;
+      width: 60%;
       height: calc(100vh - 61.4px);
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      margin: auto;
     }
   }
 
@@ -39,9 +40,20 @@
 
   &--3 {
     @include respon(desktop) {
-      height: 60%;
-      width: 60%;
+      padding: 5rem 0;
+      width: 80%;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &--4 {
+    @include respon(desktop) {
+      width: 80%;
+      margin: auto;
+      padding: 0 0 5rem 0;
     }
   }
 }
@@ -65,11 +77,19 @@
   color: rgb(40, 170, 73);
   font-size: 3rem;
   margin-bottom: 2rem;
+
+  @include respon(desktop) {
+    font-size: 3.5rem;
+  }
 }
 
 .about__caption {
   font-size: 1.3rem;
   text-align: justify;
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .blogs__circle--md {
@@ -84,6 +104,12 @@
 }
 
 // ABOUT CAROUSEL
+.about__carousel {
+  @include respon(desktop) {
+    height: 80vh;
+    width: 100%;
+  }
+}
 
 .about__carousel-btn--hidden,
 .about__carousel-btn--hidden:hover,
@@ -96,8 +122,7 @@
 .about__carousel-indicators {
 
   // @include respon(desktop) {
-  //   position: relative;
-  //   top: 30rem;
+  //   top: ;
   // }
 }
 
@@ -109,6 +134,7 @@
   @include respon(desktop) {
     height: 100%;
     width: auto;
+    margin: 0;
   }
 }
 
@@ -122,20 +148,33 @@
   background-color: white;
   border: 0.2rem solid red;
   text-align: justify;
+
 }
 
 .about__card:not(:last-child) {
   margin-bottom: 1rem;
+
+    @include respon(desktop){
+      margin: 0 0 2.5rem 0;
+    }
 }
 
 .about__card-title {
   font-size: 1.5rem;
   color: rgb(40, 170, 73);
   font-weight: 700;
+
+  @include respon(desktop) {
+    font-size: 2rem;
+  }
 }
 
 .about__card-caption {
   font-size: 1.3rem;
+
+  @include respon(desktop) {
+    font-size: 1.5rem;
+  }
 }
 
 .about__card-point-container {
@@ -154,6 +193,10 @@
 
 .about__departemen-container {
   padding: 2.5rem 0;
+
+  @include respon(desktop) {
+    padding: 0;
+  }
 }
 
 .about__departemen-title {
@@ -161,12 +204,28 @@
   color: rgb(40, 170, 73);
   font-size: 3rem;
   margin-bottom: 2rem;
+
+  @include respon(desktop) {
+    font-size: 3.5rem;
+  }
+}
+
+.about__departemen-content {
+  @include respon(desktop) {
+    display: flex;
+    align-items: stretch;
+  }
 }
 
 .about__img-bagan-container {
   width: 80%;
   margin: auto;
   padding: 1rem 0rem;
+
+  @include respon(desktop) {
+    min-width: 30%;
+    margin: 0 2.5rem 0 0;
+  }
 }
 
 .about__img-bagan {
@@ -178,11 +237,22 @@
   padding: 1rem 2rem;
   background-color: rgb(255, 214, 51);
   margin-top: 2rem;
+
+  @include respon(desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 .about__departemen-paragraph {
   font-size: 1.3rem;
   text-align: justify;
+
+  @include respon(desktop){
+    font-size: 1.5rem;
+  }
 
   &--1 {
     margin-bottom: 2rem;
@@ -195,6 +265,10 @@
   padding: 0 0 5rem 0;
   width: 100%;
   margin: auto;
+
+  @include respon(desktop) {
+    width: 0;
+  }
 }
 
 .about__img-banner {
