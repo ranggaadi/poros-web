@@ -63,6 +63,64 @@ html {
     .desktop-only {
       display: unset; } }
 
+svg {
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  top: 2.5px;
+  right: 5px; }
+
+.plate {
+  height: 60px;
+  width: 60px; }
+
+.burger {
+  filter: url(#gooeyness); }
+
+.x {
+  transform: scale(0);
+  transition: transform 400ms; }
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms; }
+
+.x .line {
+  stroke-width: 5.5px; }
+
+/* First plate */
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px; }
+
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px; }
+
+.active .line {
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms; }
+
+.active.plate1 .line1 {
+  transform: scale(0, 1);
+  transition: transform 500ms 100ms; }
+
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px; }
+
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px; }
+
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms; }
+
 .section__footer-min {
   position: absolute;
   bottom: 0;
@@ -120,16 +178,14 @@ html {
 
 .navbar {
   padding: 0.8rem 1.7rem;
-  background-color: white;
-  -webkit-box-shadow: 0rem 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.74);
-  box-shadow: 0rem 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.74); }
+  background-color: white; }
 
 .navbar-brand {
   width: 2.8rem;
   height: auto; }
 
 .custom__navbar {
-  padding: 1rem 2.5rem;
+  padding: 0rem 0rem 0rem 2.5rem;
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .custom__navbar {
@@ -157,28 +213,30 @@ html {
 
 .custom__button {
   background-color: #28aa49;
-  border-radius: .3rem;
-  padding: .5rem 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
   font-size: 1.5rem;
   color: white;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   .custom__button:hover {
     text-decoration: none;
     color: white;
     background-color: #25b94a;
     transform: scale(1.1); }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
   color: #28aa49; }
 
 .navbar-light .navbar-nav .nav-link {
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   color: black; }
 
 .navbar__logo--text {
   font-weight: 700;
   padding: 0 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  position: absolute; }
 
 .visually-hidden {
   display: none; }
@@ -194,7 +252,7 @@ html {
   width: 100%;
   opacity: 0;
   background-color: white;
-  transition: all .5s ease; }
+  transition: all 0.5s ease; }
 
 .visually-hidden:checked ~ .hamburger-menu {
   opacity: 1;
@@ -213,7 +271,7 @@ html {
   font-size: 2rem;
   color: black;
   text-decoration: none;
-  transition: all .4s ease; }
+  transition: all 0.4s ease; }
   .hamburger-menu-link:hover {
     text-decoration: none;
     color: #28aa49; }
@@ -223,10 +281,10 @@ html {
 
 .hamburger-menu-button {
   background-color: #28aa49;
-  border-radius: .3rem;
-  padding: .5rem 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
   color: white;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   .hamburger-menu-button:hover {
     color: white;
     background-color: #25b94a;
@@ -248,7 +306,6 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   width: 65%;
   margin: auto;
   padding: 2.5rem 0;
-  padding-top: calc(60.95px + 2.5rem);
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .about__illustration-container {
@@ -579,7 +636,8 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
 
 .pretend-container {
   position: relative;
-  min-height: calc(100vh - 51.9833px); }
+  min-height: calc(100vh - 51.9833px);
+  padding-top: calc(60.95px + 2.5rem); }
 
 /* 
 *

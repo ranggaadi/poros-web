@@ -1,8 +1,8 @@
 .navbar {
   padding: 0.8rem 1.7rem;
   background-color: white;
-  -webkit-box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74); 
-  box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74); 
+  // -webkit-box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74);
+  // box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74);
 }
 
 .navbar-brand {
@@ -11,7 +11,7 @@
 }
 
 .custom__navbar {
-  padding: 1rem 2.5rem;
+  padding: 0rem 0rem 0rem 2.5rem;
 
   @include respon(desktop) {
     padding: 1rem 20rem;
@@ -35,7 +35,7 @@
   font-size: 1.5rem;
 
   @include respon(desktop) {
-    &:not(:last-child){
+    &:not(:last-child) {
       margin: 0 2rem 0 0;
     }
   }
@@ -47,11 +47,11 @@
 
 .custom__button {
   background-color: rgb(40, 170, 73);
-  border-radius: .3rem;
-  padding: .5rem 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
   font-size: 1.5rem;
   color: white;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   // width: 50%;
 
   &:hover {
@@ -63,12 +63,13 @@
 }
 
 // buat ngilangim EFFECT
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(40, 170, 73);;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(40, 170, 73);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   color: black;
 }
 
@@ -76,8 +77,8 @@
   font-weight: 700;
   padding: 0 1rem;
   font-size: 2rem;
+  position: absolute;
 }
-
 
 // HAMBURGER EFFECT
 .visually-hidden {
@@ -98,7 +99,7 @@
   // z-index: 1;
   background-color: white;
 
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .visually-hidden:checked ~ .hamburger-menu {
@@ -120,7 +121,7 @@
   font-size: 2rem;
   color: black;
   text-decoration: none;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
   &:hover {
     text-decoration: none;
@@ -134,10 +135,10 @@
 
 .hamburger-menu-button {
   background-color: rgb(40, 170, 73);
-  border-radius: .3rem;
-  padding: .5rem 2rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
   color: white;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   // width: 50%;
 
   &:hover {
