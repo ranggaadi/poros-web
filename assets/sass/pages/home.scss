@@ -87,7 +87,11 @@
       height: auto; */
   /* background-color: aquamarine; */
   position: absolute;
-  bottom: 0;
+  bottom: 0.03px;
+
+  @include respon(desktop) {
+    bottom: unset;
+  }
 }
 .header__caption {
   color: black;
