@@ -1,13 +1,13 @@
 @import 'abstracts/mixins';
 
-@import 'base/base.scss';
-@import 'base/util.scss';
+@import 'base/base';
+@import 'base/util';
 
 @import 'components/footer-min';
 @import 'components/footer';
 @import 'components/navbar';
 
-@import 'pages/about.scss';
-@import 'pages/blogs.scss';
-@import 'pages/home.scss';
-@import 'pages/findUs.scss';
+@import 'pages/about';
+@import 'pages/blogs';
+@import 'pages/home';
+@import 'pages/findUs';
