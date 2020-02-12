@@ -1,8 +1,11 @@
+@import '../abstracts/mixins';
+
 // ILLUSTRATION //
 .about__illustration-container {
   width: 65%;
   margin: auto;
   padding: 2.5rem 0;
+  padding-top: calc(60.95px + 2.5rem);
 
   @include respon(desktop) {
     max-width: 35rem;
@@ -22,7 +25,7 @@
   &--1 {
     @include respon(desktop) {
       width: 60%;
-      height: calc(100vh - 61.4px);
+      height: 100vh;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -119,6 +122,7 @@
 }
 
 .about__carousel-indicators {
+  z-index: unset;
   // @include respon(desktop) {
   //   top: ;
   // }

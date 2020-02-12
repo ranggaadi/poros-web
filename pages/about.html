@@ -12,26 +12,40 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light z--1 custom__navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light z--1 custom__navbar">
         <a class="navbar-brand custom__navbar-brand" href="#">
-          <img src="/assets/images/logo poros.svg" alt="Poros" class="img-fluid custom__img-fluid" />
-          <span class="navbar__logo--text">POROS</span>
+            <img src="/assets/images/logo poros.svg" alt="Poros" class="img-fluid custom__img-fluid" />
+            <span class="navbar__logo--text">POROS</span>
         </a>
-        <button class="navbar-toggler custom__navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <!-- <button class="navbar-toggler custom__navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon  custom__navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav custom__navbar-nav ml-auto">
-            <!--ketambahan text-center-->
-            <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Home</a>
-            <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">About</a>
-            <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Blogs</a>
-            <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Find Us</a>
-            <a class="custom__button" href="#">Apply Now</a>
-          </div>
+        </button> -->
+        <input type="checkbox" class="visually-hidden" id="toggle">
+        <label for="toggle" class="navbar-toggler custom__navbar-toggler hamburger-toggler">
+            <span class="navbar-toggler-icon  custom__navbar-toggler-icon"></span>
+        </label>
+        <div class="hamburger-menu">
+            <div class="hamburger-menu-container">
+                <a href="#" class="hamburger-menu-link hamburger-menu-caption">Home</a>
+                <a href="#" class="hamburger-menu-link hamburger-menu-caption">About</a>
+                <a href="#" class="hamburger-menu-link hamburger-menu-caption">Blogs</a>
+                <a href="#" class="hamburger-menu-link hamburger-menu-caption">Find Us</a>
+                <a href="#" class="hamburger-menu-link hamburger-menu-button">Apply Now</a>
+            </div>
         </div>
-      </nav>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav custom__navbar-nav ml-auto">
+                <!--ketambahan text-center-->
+                <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Home</a>
+                <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">About</a>
+                <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Blogs</a>
+                <a class="nav-item nav-link custom__nav-item custom__nav-link" href="#">Find Us</a>
+                <a class="custom__button" href="#">Apply Now</a>
+            </div>
+        </div>
+    </nav>
 
 
     <div class="pretend-container">
@@ -44,17 +58,20 @@
                     <div class="about__content about__content--main">
                         <h1 class="about__title">About.</h1>
                         <p class="about__caption">
-                            POROS Organization of Open Source merupakan sebuah lembaga semi otonom yang mewadahi pengguna
-                            GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal yang bertempat di Fakultas Ilmu
+                            POROS Organization of Open Source merupakan sebuah lembaga semi otonom yang mewadahi
+                            pengguna
+                            GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal yang bertempat di Fakultas
+                            Ilmu
                             Komputer Universitas Brawijaya.
                         </p>
                     </div>
                 </div>
-            
+
                 <!-- CAROUSEL -->
                 <div class="about__responsive-container--2">
                     <div class="about__carousel-container">
-                        <div id="carouselExampleIndicators" class=" about__carousel carousel slide" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class=" about__carousel carousel slide"
+                            data-ride="carousel">
                             <ol class="carousel-indicators about__carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -79,11 +96,13 @@
                                     <img src="/assets/images/carousel-img5.jpg" class="d-block w-100" alt="img-5">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev about__carousel-btn--hidden" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev about__carousel-btn--hidden"
+                                href="#carouselExampleIndicators" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next about__carousel-btn--hidden" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next about__carousel-btn--hidden"
+                                href="#carouselExampleIndicators" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -96,26 +115,36 @@
                     <div class="about__card-container">
                         <div class="about__card">
                             <h2 class="about__card-title">Tujuan</h2>
-                            <p class="about__card-caption">Memberikan pengenalan dan pendidikan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal pada masyarakat luas. </p>
+                            <p class="about__card-caption">Memberikan pengenalan dan pendidikan GNU/Linux serta
+                                perangkat lunak sumber terbuka, bebas, dan legal pada masyarakat luas. </p>
                         </div>
                         <div class="about__card">
                             <h2 class="about__card-title">Visi</h2>
-                            <p class="about__card-caption">Visi POROS adalah terwujudnya masyarakat yang berwawasan luas, khususnya lingkungan pendidikan dan dapat memanfaatkan penggunaan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal dengan baik. </p>
+                            <p class="about__card-caption">Visi POROS adalah terwujudnya masyarakat yang berwawasan
+                                luas, khususnya lingkungan pendidikan dan dapat memanfaatkan penggunaan GNU/Linux serta
+                                perangkat lunak sumber terbuka, bebas, dan legal dengan baik. </p>
                         </div>
                         <div class="about__card">
                             <h2 class="about__card-title">Misi</h2>
                             <div class="about__card-caption-container">
                                 <div class="about__card-point-container">
                                     <p class="about__card-caption   about__card-point-number">1</p>
-                                    <p class="about__card-caption   about__card-point-caption">Menjadi sarana bagi mahasiswa FILKOM dan masyarakat pada umumnya untuk dapat mempelajari dan memanfaatkan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal.</p>
+                                    <p class="about__card-caption   about__card-point-caption">Menjadi sarana bagi
+                                        mahasiswa FILKOM dan masyarakat pada umumnya untuk dapat mempelajari dan
+                                        memanfaatkan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal.
+                                    </p>
                                 </div>
                                 <div class="about__card-point-container">
                                     <p class="about__card-caption   about__card-point-number">2</p>
-                                    <p class="about__card-caption   about__card-point-caption">Menjadi sarana berbagi ilmu dan pengetahuan seputar GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal.</p>
+                                    <p class="about__card-caption   about__card-point-caption">Menjadi sarana berbagi
+                                        ilmu dan pengetahuan seputar GNU/Linux serta perangkat lunak sumber terbuka,
+                                        bebas, dan legal.</p>
                                 </div>
                                 <div class="about__card-point-container">
                                     <p class="about__card-caption   about__card-point-number">3</p>
-                                    <p class="about__card-caption   about__card-point-caption">Berkontribusi pada pengembangan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal</p>
+                                    <p class="about__card-caption   about__card-point-caption">Berkontribusi pada
+                                        pengembangan GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -127,16 +156,28 @@
                         <h1 class="about__departemen-title">Departemen.</h1>
                         <div class="about__departemen-content">
                             <div class="about__img-bagan-container">
-                                <img src="/assets/images/bagan-organisasi.svg" alt="bagan keanggotaan" class="about__img-bagan">
+                                <img src="/assets/images/bagan-organisasi.svg" alt="bagan keanggotaan"
+                                    class="about__img-bagan">
                             </div>
                             <div class="about__departemen-card">
-                                <p class="about__departemen-paragraph  about__departemen-paragraph--1">&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis nisl at sollicitudin. Etiam eget quam vel dui volutpat laoreet. Cras quis consequat diam, vitae blandit lectus. Etiam convallis, ante at dignissim fringilla, ligula mi convallis purus, id vulputate ligula sapien sit amet nulla. Etiam ac rhoncus eros, eu pharetra lorem. Aenean ac ex tincidunt, molestie tellus vitae, varius massa. Suspendisse pharetra ullamcorper facilisis. Nam ultricies ante sed nunc finibus, id venenatis ligula vehicula.</p>
-                                <p class="about__departemen-paragraph  about__departemen-paragraph--2">&emsp; Curabitur non ante commodo, tempus nisl quis, elementum odio. Maecenas tempor ipsum metus. Praesent nec risus orci. Maecenas augue dui, ullamcorper at tempor et, eleifend quis lectus. Curabitur id venenatis justo. Maecenas ullamcorper vitae eros quis dictum. Vestibulum pellentesque neque ac elementum feugiat. </p>
+                                <p class="about__departemen-paragraph  about__departemen-paragraph--1">&emsp; Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis nisl at
+                                    sollicitudin. Etiam eget quam vel dui volutpat laoreet. Cras quis consequat diam,
+                                    vitae blandit lectus. Etiam convallis, ante at dignissim fringilla, ligula mi
+                                    convallis purus, id vulputate ligula sapien sit amet nulla. Etiam ac rhoncus eros,
+                                    eu pharetra lorem. Aenean ac ex tincidunt, molestie tellus vitae, varius massa.
+                                    Suspendisse pharetra ullamcorper facilisis. Nam ultricies ante sed nunc finibus, id
+                                    venenatis ligula vehicula.</p>
+                                <p class="about__departemen-paragraph  about__departemen-paragraph--2">&emsp; Curabitur
+                                    non ante commodo, tempus nisl quis, elementum odio. Maecenas tempor ipsum metus.
+                                    Praesent nec risus orci. Maecenas augue dui, ullamcorper at tempor et, eleifend quis
+                                    lectus. Curabitur id venenatis justo. Maecenas ullamcorper vitae eros quis dictum.
+                                    Vestibulum pellentesque neque ac elementum feugiat. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="about__img-banner-container">
