@@ -23,15 +23,17 @@
 /* ILLUSTRATION  */
 
 .find-us__illustration-container {
-  max-width: 20.678rem;
+  // max-width: 20.678rem;
   margin: auto;
   /* background-color: teal; */
   padding: 1.5rem;
+  width: 65%;
 
   @include respon(desktop) {
     padding: 0 3rem 0 0;
     margin: 0;
     max-width: 35rem;
+    width: unset;
   }
 }
 
@@ -85,6 +87,10 @@
 
 .find-us__address {
   margin-bottom: 2rem;
+}
+
+.find-us__email {
+  margin-bottom: 10rem;
 }
 
 .find-us__address-title,
