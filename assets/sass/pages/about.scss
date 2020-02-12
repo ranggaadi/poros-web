@@ -118,9 +118,7 @@
   opacity: 0;
 }
 
-
 .about__carousel-indicators {
-
   // @include respon(desktop) {
   //   top: ;
   // }
@@ -148,15 +146,14 @@
   background-color: white;
   border: 0.2rem solid red;
   text-align: justify;
-
 }
 
 .about__card:not(:last-child) {
   margin-bottom: 1rem;
 
-    @include respon(desktop){
-      margin: 0 0 2.5rem 0;
-    }
+  @include respon(desktop) {
+    margin: 0 0 2.5rem 0;
+  }
 }
 
 .about__card-title {
@@ -250,7 +247,7 @@
   font-size: 1.3rem;
   text-align: justify;
 
-  @include respon(desktop){
+  @include respon(desktop) {
     font-size: 1.5rem;
   }
 

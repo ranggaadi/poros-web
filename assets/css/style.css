@@ -480,12 +480,25 @@ html {
 *
 */
 /* navbar */
+/*
+VALUE PARAMETER:                ABAIKAN INI SLUR!!!
+-   phone
+-   tb-pot      //tablet potrait
+-   tb-land     //tablet landscape
+-   big-d       //big desktop wkwk
+//dan kita menggunakan em daripada rem karena em dan rem pada media query sama sama menganut pada 
+//default font-size browser yang bisa diatur oleh user jadi kita menggunakan em (standarnya)
+//karena 1rem dan 1em sama sama 16px (16px adalah default browser font-size)
+maka logic = $breakpoint / 16px = ${hasil}em
+URUTAN Menambah media query: base + typography -> layout & grid -> page layout -> component
+*/
 /* header */
 .header {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 40rem;
   overflow: hidden;
+  margin-bottom: 3rem;
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .header {
@@ -496,8 +509,7 @@ html {
   width: 85%;
   border-bottom-left-radius: 3rem;
   right: 0;
-  top: 0rem;
-  bottom: 2rem;
+  top: 0;
   position: absolute;
   /* overflow: hidden; */
   /* z-index: 1; */
@@ -514,6 +526,9 @@ html {
   filter: grayscale(100%);
   border: 1px solid #ffffff;
   box-sizing: border-box;
+  background-image: url("/assets/images/foto - sfa.png");
+  background-size: cover;
+  background-position: right 70%;
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .header__logo {
@@ -525,14 +540,15 @@ html {
   width: 32.3rem;
   height: 32.3rem;
   position: absolute;
-  left: -3.2rem;
-  top: -7.5rem;
+  left: -10.15rem;
+  top: -12.15rem;
   /* transform: translate(-50%, -50%); */
   /* z-index: 0; */
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .circle--lg {
-      left: 55rem; } }
+      top: -16.15rem;
+      left: -16.15rem; } }
 
 .circle--xs {
   border-radius: 50%;
@@ -547,8 +563,7 @@ html {
       height: auto; */
   /* background-color: aquamarine; */
   position: absolute;
-  bottom: 5rem;
-  transform: translate(0%, 0%); }
+  bottom: 0; }
 
 .header__caption {
   color: black;
@@ -558,7 +573,7 @@ html {
   background-color: #ffd633;
   /* position: absolute; */
   width: max-content;
-  font-size: 3.4rem; }
+  font-size: 3.2rem; }
 
 .header__caption:first-child {
   margin-bottom: 0.5rem; }

@@ -8,13 +8,15 @@
 
 /* navbar */
 // pindah ke components
+@import '../abstracts/mixins';
 
 /* header */
 .header {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 40rem;
   overflow: hidden;
+  margin-bottom: 3rem;
 
   @include respon(desktop) {
     width: 100%;
@@ -26,13 +28,12 @@
   width: 85%;
   border-bottom-left-radius: 3rem;
   right: 0;
-  top: 0rem;
-  bottom: 2rem;
+  top: 0;
   position: absolute;
   /* overflow: hidden; */
   /* z-index: 1; */
 
-  @include respon(desktop){
+  @include respon(desktop) {
     width: 50%;
     height: 85%;
   }
@@ -45,9 +46,12 @@
   filter: grayscale(100%);
   border: 1px solid #ffffff;
   box-sizing: border-box;
+  background-image: url('/assets/images/foto - sfa.png');
+  background-size: cover;
+  background-position: right 70%;
   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  @include respon(desktop){
+  @include respon(desktop) {
     height: 100%;
     // width: auto;
   }
@@ -59,13 +63,14 @@
   width: 32.3rem;
   height: 32.3rem;
   position: absolute;
-  left: -3.2rem;
-  top: -7.5rem;
+  left: -10.15rem;
+  top: -12.15rem;
   /* transform: translate(-50%, -50%); */
   /* z-index: 0; */
 
   @include respon(desktop) {
-    left: 55rem;
+    top: -16.15rem;
+    left: -16.15rem;
   }
 }
 
@@ -82,8 +87,7 @@
       height: auto; */
   /* background-color: aquamarine; */
   position: absolute;
-  bottom: 5rem;
-  transform: translate(0%, 0%);
+  bottom: 0;
 }
 .header__caption {
   color: black;
@@ -93,7 +97,7 @@
   background-color: rgb(255, 214, 51);
   /* position: absolute; */
   width: max-content;
-  font-size: 3.4rem;
+  font-size: 3.2rem;
 }
 
 .header__caption:first-child {
