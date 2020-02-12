@@ -105,3 +105,13 @@ svg {
   transform: scale(1);
   transition: transform 400ms 350ms;
 }
+
+.pretend-container {
+  position: relative;
+  min-height: calc(100vh - 51.9833px);
+  padding-top: calc(60.95px + 2.5rem);
+
+  @include respon(desktop) {
+    padding-top: 6rem;
+  }
+}

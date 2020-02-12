@@ -8,7 +8,7 @@
   min-height: calc(100vh - 60.1333px);
 
   @include respon(desktop) {
-    height: calc(100vh - 56px - 40px);
+    height: calc(100vh - 55.9833px - 40px);
     // padding: 10rem 15rem 8rem 15rem;
   }
 }
@@ -128,9 +128,3 @@
 }
 
 // FOOTER ADA DI components
-
-.pretend-container {
-  position: relative;
-  min-height: calc(100vh - 51.9833px);
-  padding-top: calc(60.95px + 2.5rem);
-}

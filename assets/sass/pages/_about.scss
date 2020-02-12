@@ -275,7 +275,11 @@
   width: 100%;
 }
 
-.pretend-container {
-  position: relative;
-  min-height: calc(100vh - 5.19833rem);
-}
+// .pretend-container {
+//   position: relative;
+//   min-height: calc(100vh - 5.19833rem);
+
+//   @include respon(desktop) {
+//     min-height: calc(100vh - 5.59833rem);
+//   }
+// }
