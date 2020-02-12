@@ -8,7 +8,7 @@
   min-height: calc(100vh - 60.1333px);
 
   @include respon(desktop) {
-    height: calc(100vh - 55.9833px - 40px);
+    // height: calc(100vh - 55.9833px - 40px);
     // padding: 10rem 15rem 8rem 15rem;
   }
 }

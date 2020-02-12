@@ -112,6 +112,7 @@ svg {
   padding-top: calc(60.95px + 2.5rem);
 
   @include respon(desktop) {
-    padding-top: 6rem;
+    min-height: 100vh;
+    padding-top: 5.59833rem;
   }
 }
