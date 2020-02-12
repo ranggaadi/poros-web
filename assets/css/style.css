@@ -20,6 +20,10 @@ html {
   font-size: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
+body {
+  max-width: 1024px;
+  margin: auto; }
+
 /* Utilities */
 .z--m1 {
   z-index: -1; }
@@ -48,6 +52,20 @@ html {
 
 .box-shadow-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.mobile-only {
+  display: unset;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .mobile-only {
+      display: none; } }
+
+.desktop-only {
+  display: none;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .desktop-only {
+      display: unset; } }
 
 .section__footer-min {
   position: absolute;
@@ -507,7 +525,8 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   @media only screen and (min-width: 64em) {
     .header {
       width: 100%;
-      height: 100vh; } }
+      height: calc(90vh - 61.4px);
+      min-height: 382.117px; } }
 
 .header__image-container {
   width: 85%;
@@ -521,7 +540,7 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   @media only screen and (min-width: 64em) {
     .header__image-container {
       width: 50%;
-      height: 85%; } }
+      height: 100%; } }
 
 .header__logo {
   width: 100%;
@@ -552,7 +571,7 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   @media only screen and (min-width: 64em) {
     .circle--lg {
       top: -16.15rem;
-      left: -16.15rem; } }
+      left: -13.15rem; } }
 
 .circle--xs {
   border-radius: 50%;
@@ -560,7 +579,11 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 2rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .circle--xs {
+      display: none; } }
 
 .header__caption-container {
   /* width: 80%;
@@ -571,7 +594,12 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   /* 37.5 == 600px / 16px = 37.5 */ }
   @media only screen and (min-width: 64em) {
     .header__caption-container {
-      bottom: unset; } }
+      bottom: unset;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%; } }
 
 .header__caption {
   color: black;
@@ -581,14 +609,24 @@ URUTAN Menambah media query: base + typography -> layout & grid -> page layout -
   background-color: #ffd633;
   /* position: absolute; */
   width: max-content;
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  border-radius: 0 3px 3px 0;
+  margin-bottom: 20px;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .header__caption {
+      padding-left: 4rem; } }
 
 .header__caption:first-child {
   margin-bottom: 0.5rem; }
 
 /*  SECTION ABOUT */
 .about__container {
-  padding: 0 2.5rem; }
+  padding: 0 2.5rem;
+  /* 37.5 == 600px / 16px = 37.5 */ }
+  @media only screen and (min-width: 64em) {
+    .about__container {
+      padding: 0 4rem; } }
 
 .about__content {
   font-style: normal;
