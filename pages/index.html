@@ -17,7 +17,7 @@
 
   <body class="box-shadow-1">
     <nav
-      class="navbar navbar-expand-lg navbar-light z--2 custom__navbar box-shadow-1"
+      class="navbar fixed-top navbar-expand-lg navbar-light z--1 custom__navbar box-shadow-1"
     >
       <a class="navbar-brand custom__navbar-brand" href="#">
         <img
@@ -27,36 +27,83 @@
         />
         <span class="navbar__logo--text">POROS</span>
       </a>
-      <button
-        class="navbar-toggler custom__navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+      <!-- <button class="navbar-toggler custom__navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon  custom__navbar-toggler-icon"></span>
+          </button> -->
+      <input type="checkbox" class="visually-hidden" id="toggle" />
+      <label
+        for="toggle"
+        class="navbar-toggler custom__navbar-toggler hamburger-toggler"
       >
-      <svg>
-        <defs>
-          <filter id="gooeyness">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
-            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="plate plate1" onclick="this.classList.toggle('active')">
-        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-          <path class="line line1" d="M 30,65 H 70"/>
-          <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"/>
-          <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"/>
+        <svg>
+          <defs>
+            <filter id="gooeyness">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.2"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="gooeyness"
+              />
+              <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+            </filter>
+          </defs>
         </svg>
-        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-          <path class="line" d="M 34,32 L 66,68" />
-          <path class="line" d="M 66,32 L 34,68" />
-        </svg>
+        <div class="plate plate1" onclick="this.classList.toggle('active')">
+          <svg
+            class="burger"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line line1" d="M 30,65 H 70" />
+            <path
+              class="line line2"
+              d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"
+            />
+            <path
+              class="line line3"
+              d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"
+            />
+          </svg>
+          <svg
+            class="x"
+            version="1.1"
+            height="100"
+            width="100"
+            viewBox="0 0 100 100"
+          >
+            <path class="line" d="M 34,32 L 66,68" />
+            <path class="line" d="M 66,32 L 34,68" />
+          </svg>
+        </div>
+      </label>
+      <div class="hamburger-menu">
+        <div class="hamburger-menu-container">
+          <a href="#" class="hamburger-menu-link hamburger-menu-caption"
+            >Home</a
+          >
+          <a href="#" class="hamburger-menu-link hamburger-menu-caption"
+            >About</a
+          >
+          <a href="#" class="hamburger-menu-link hamburger-menu-caption"
+            >Blogs</a
+          >
+          <a href="#" class="hamburger-menu-link hamburger-menu-caption"
+            >Find Us</a
+          >
+          <a href="#" class="hamburger-menu-link hamburger-menu-button"
+            >Apply Now</a
+          >
+        </div>
       </div>
-      </button>
+
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav custom__navbar-nav ml-auto">
           <!--ketambahan text-center-->
@@ -100,10 +147,10 @@
         <section class="section__about">
           <div class="about__container">
             <p class="about__content desktop-only">
-              POROS Organization of Open Source merupakan sebuah lembaga semi otonom
-              yang mewadahi pengguna GNU/Linux serta perangkat lunak sumber terbuka,
-              bebas dan legal yang bertempat di Fakultas Ilmu Komputer Universitas
-              Brawijaya
+              POROS Organization of Open Source merupakan sebuah lembaga semi
+              otonom yang mewadahi pengguna GNU/Linux serta perangkat lunak
+              sumber terbuka, bebas dan legal yang bertempat di Fakultas Ilmu
+              Komputer Universitas Brawijaya
             </p>
           </div>
         </section>
