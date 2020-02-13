@@ -12,12 +12,13 @@
   overflow: hidden;
   position: relative;
   min-height: calc(100vh - 60.1333px);
-
+  
   @include respon(desktop) {
+    min-height: calc(100vh - 55.9833px - 40px);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 0 15rem 8rem 15rem;
+    // padding: 0 15rem 8rem 15rem;
   }
 }
 
@@ -27,14 +28,13 @@
   // max-width: 20.678rem;
   margin: auto;
   /* background-color: teal; */
-  padding: 1.5rem;
+  padding: 2.5rem 0;
   width: 65%;
 
   @include respon(desktop) {
     padding: 0 3rem 0 0;
     margin: 0;
     max-width: 35rem;
-    width: unset;
   }
 }
 
@@ -46,6 +46,18 @@
 /*  */
 
 /* FIND US CONTAINER  */
+
+.find-us__main-content {
+  @include respon(desktop) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // height: calc(100vh - 200px);
+    width: 50%;
+    margin: auto;
+    // padding: 10rem 15rem 8rem 15rem;
+  }
+}
 
 .find-us__content {
   padding: 0 1.6rem;
@@ -64,6 +76,7 @@
 
   @include respon(desktop) {
     margin-bottom: unset;
+    max-width: 35rem;
   }
 }
 
@@ -79,11 +92,11 @@
 }
 
 .find-us__caption {
-  font-size: 1.3rem;
+  font-size: 1.65rem;
 
-  @include respon(desktop) {
-    font-size: 1.5rem;
-  }
+  // @include respon(desktop) {
+  //   font-size: 1.5rem;
+  // }
 }
 
 .find-us__address {
@@ -92,43 +105,47 @@
 
 .find-us__email {
   margin-bottom: 10rem;
+
+  @include respon(desktop) {
+    margin-bottom: unset;
+  }
 }
 
 .find-us__address-title,
 .find-us__email-title {
-  font-size: 1.32rem;
+  font-size: 1.65rem;
   font-weight: 700;
   color: #808080;
 
-  @include respon(desktop) {
-    font-size: 1.5rem;
-  }
+  // @include respon(desktop) {
+  //   font-size: 1.5rem;
+  // }
 }
 
 .find-us__address-caption,
 .find-us__email-caption {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.65rem;
 
-  @include respon(desktop) {
-    font-size: 1.5rem;
-  }
+  // @include respon(desktop) {
+  //   font-size: 1.5rem;
+  // }
 }
 
 .find-us__address-link {
   color: rgb(40, 170, 73);
   font-weight: 700;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.65rem;
 
   &:hover {
     color: rgb(37, 185, 74);
     text-decoration: none;
   }
 
-  @include respon(desktop) {
-    font-size: 1.5rem;
-  }
+  // @include respon(desktop) {
+  //   font-size: 1.5rem;
+  // }
 }
 
 .find-us__circle--md {

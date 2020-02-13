@@ -8,7 +8,11 @@
   min-height: calc(100vh - 60.1333px);
 
   @include respon(desktop) {
-    // height: calc(100vh - 55.9833px - 40px);
+    min-height: calc(100vh - 55.9833px - 40px);
+    display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    // align-items: ;
     // padding: 10rem 15rem 8rem 15rem;
   }
 }
@@ -48,6 +52,10 @@
 
   @include respon(desktop) {
     padding: 0;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -83,6 +91,10 @@
     // position: relative;
     z-index: 1;
     margin-bottom: 10rem;
+
+    @include respon(desktop) {
+      margin-bottom: unset;
+    }
   }
 }
 
