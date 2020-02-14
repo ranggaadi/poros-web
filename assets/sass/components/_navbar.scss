@@ -1,8 +1,16 @@
 .navbar {
   padding: 0.8rem 1.7rem;
   background-color: white;
+  transition-duration: 0.3s;
   // -webkit-box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74);
   // box-shadow: 0rem .5rem 1rem -0.5rem rgba(0,0,0,0.74);
+}
+
+.navbar-container {
+  max-width: 1333px;
+  width: 1333px;
+  display: flex;
+  margin: auto;
 }
 
 .navbar-brand {
@@ -14,7 +22,7 @@
   padding: 0rem 0rem 0rem 2.5rem;
 
   @include respon(desktop) {
-    padding: 1rem 20rem;
+    padding: 1rem 4rem;
   }
 }
 

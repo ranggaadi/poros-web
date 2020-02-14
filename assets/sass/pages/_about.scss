@@ -1,13 +1,12 @@
-@import '../abstracts/mixins';
-
 // ILLUSTRATION //
 .about__illustration-container {
-  width: 65%;
+  max-width: 200px;
   margin: auto;
   padding: 2.5rem 0;
 
   @include respon(desktop) {
-    max-width: 35rem;
+    max-width: 25rem;
+    width: 25rem;
     margin: 0;
     padding: 0 3rem 0 0;
   }
@@ -274,12 +273,3 @@
 .about__img-banner {
   width: 100%;
 }
-
-// .pretend-container {
-//   position: relative;
-//   min-height: calc(100vh - 5.19833rem);
-
-//   @include respon(desktop) {
-//     min-height: calc(100vh - 5.59833rem);
-//   }
-// }

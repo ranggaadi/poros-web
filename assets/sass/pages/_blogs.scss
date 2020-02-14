@@ -1,14 +1,16 @@
-@import '../abstracts/mixins';
-
 .section__blogs {
   // background-color: wheat;
   height: 100%;
   overflow: hidden;
   position: relative;
-  min-height: calc(100vh - 60.1333px);
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @include respon(desktop) {
-    min-height: calc(100vh - 55.9833px - 40px);
+    min-height: calc(100vh - 65px);
     display: flex;
     // flex-direction: row;
     // justify-content: flex-start;
@@ -30,7 +32,7 @@
 }
 
 .blogs__illustration-container {
-  width: 65%;
+  width: 20rem;
   margin: auto;
   /* background-color: teal; */
   padding: 2.5rem 0;
@@ -39,6 +41,7 @@
     padding: 0 3rem 0 0;
     margin: 0;
     max-width: 35rem;
+    width: 35rem;
   }
 }
 
@@ -129,7 +132,7 @@
   width: 16.9rem;
   height: 16.9rem;
   position: absolute;
-  transform: translate(-50%, -75%);
+  transform: translate(-50%, -50%);
   top: 100%;
   left: 85%;
 

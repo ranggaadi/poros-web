@@ -5,16 +5,15 @@
 *
 *
 */
-@import '../abstracts/mixins';
 
 .section__find-us {
   height: 100%;
   overflow: hidden;
   position: relative;
-  min-height: calc(100vh - 60.1333px);
-  
+  min-height: calc(100vh - 65px);
+
   @include respon(desktop) {
-    min-height: calc(100vh - 55.9833px - 40px);
+    min-height: calc(100vh - 65px - 40px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +28,13 @@
   margin: auto;
   /* background-color: teal; */
   padding: 2.5rem 0;
-  width: 65%;
+  width: 155px;
 
   @include respon(desktop) {
     padding: 0 3rem 0 0;
     margin: 0;
     max-width: 35rem;
+    width: 35rem;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .find-us__content {
-  padding: 0 1.6rem;
+  padding: 0 2.5rem;
 
   @include respon(desktop) {
     padding: 0;
@@ -104,7 +104,7 @@
 }
 
 .find-us__email {
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 
   @include respon(desktop) {
     margin-bottom: unset;
