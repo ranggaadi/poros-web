@@ -1,11 +1,13 @@
+@import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-@import 'base/base';
-@import 'base/util';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/animations';
+@import 'base/utilities';
 
-@import 'components/footer-min';
-@import 'components/footer';
-@import 'components/navbar';
+@import 'layout/footer';
+@import 'layout/navbar';
 
 @import 'pages/about';
 @import 'pages/blogs';

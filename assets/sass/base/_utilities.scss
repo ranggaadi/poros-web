@@ -53,7 +53,7 @@
   }
 }
 
-svg {
+.svg {
   height: 60px;
   position: absolute;
   width: 60px;
@@ -115,8 +115,8 @@ svg {
 
 .pretend-container {
   position: relative;
-  min-height: calc(100vh - 65px);
-  padding-top: 65px;
+  min-height: calc(100vh - #{$navbar-mobile-height});
+  padding-top: $navbar-mobile-height;
 
   @include respon(desktop) {
     min-height: 100vh;

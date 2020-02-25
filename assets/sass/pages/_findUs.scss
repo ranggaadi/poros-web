@@ -1,8 +1,6 @@
 /* 
 *
-* 
 * FIND US SECTION
-*
 *
 */
 
@@ -10,23 +8,20 @@
   height: 100%;
   overflow: hidden;
   position: relative;
-  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - #{$navbar-mobile-height});
 
   @include respon(desktop) {
-    min-height: calc(100vh - 65px - 40px);
+    min-height: calc(100vh - #{$navbar-mobile-height} - #{$footer-height});
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding: 0 15rem 8rem 15rem;
   }
 }
 
 /* ILLUSTRATION  */
 
 .find-us__illustration-container {
-  // max-width: 20.678rem;
   margin: auto;
-  /* background-color: teal; */
   padding: 2.5rem 0;
   width: 155px;
 
@@ -43,8 +38,6 @@
   height: auto;
 }
 
-/*  */
-
 /* FIND US CONTAINER  */
 
 .find-us__main-content {
@@ -52,10 +45,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // height: calc(100vh - 200px);
     width: 50%;
     margin: auto;
-    // padding: 10rem 15rem 8rem 15rem;
   }
 }
 
@@ -93,10 +84,6 @@
 
 .find-us__caption {
   font-size: 1.65rem;
-
-  // @include respon(desktop) {
-  //   font-size: 1.5rem;
-  // }
 }
 
 .find-us__address {
@@ -116,20 +103,12 @@
   font-size: 1.65rem;
   font-weight: 700;
   color: #808080;
-
-  // @include respon(desktop) {
-  //   font-size: 1.5rem;
-  // }
 }
 
 .find-us__address-caption,
 .find-us__email-caption {
   margin: 0;
   font-size: 1.65rem;
-
-  // @include respon(desktop) {
-  //   font-size: 1.5rem;
-  // }
 }
 
 .find-us__address-link {
@@ -142,10 +121,6 @@
     color: rgb(37, 185, 74);
     text-decoration: none;
   }
-
-  // @include respon(desktop) {
-  //   font-size: 1.5rem;
-  // }
 }
 
 .find-us__circle--md {

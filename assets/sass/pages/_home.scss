@@ -1,19 +1,15 @@
 /* 
-*
 * 
 * HOMEPAGE PAGE
-*
 *
 */
 
 /* navbar */
 // pindah ke components
-@import '../abstracts/mixins';
 
 /* header */
 .header {
   position: relative;
-  // width: 100vw;
   height: 40rem;
   overflow: hidden;
   margin-bottom: 3rem;
@@ -34,8 +30,6 @@
   right: 0;
   top: 0;
   position: absolute;
-  /* overflow: hidden; */
-  /* z-index: 1; */
 
   @include respon(desktop) {
     width: 50%;
@@ -48,16 +42,13 @@
   height: 40rem;
   border-radius: 0 0 0 3rem;
   filter: grayscale(100%);
-  border: 1px solid #ffffff;
   box-sizing: border-box;
-  background-image: url('/img/pages/foto - sfa.png');
+  background-image: url('https://static.ivqonsanada.com/poros/img/foto%20-%20sfa.jpg');
   background-size: cover;
   background-position: right 70%;
-  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @include respon(desktop) {
     height: 100%;
-    // width: auto;
   }
 }
 
@@ -69,8 +60,6 @@
   position: absolute;
   left: -10.15rem;
   top: -12.15rem;
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 0; */
 
   @include respon(desktop) {
     top: -16.15rem;
@@ -91,9 +80,6 @@
   }
 }
 .header__caption-container {
-  /* width: 80%;
-      height: auto; */
-  /* background-color: aquamarine; */
   position: absolute;
   bottom: 0.03px;
 
@@ -106,17 +92,17 @@
     height: 85%;
   }
 }
+
 .header__caption {
   color: black;
   text-transform: uppercase;
   font-weight: 700;
   padding: 0.3rem 2rem;
   background-color: rgb(255, 214, 51);
-  /* position: absolute; */
   width: max-content;
   font-size: 3.2rem;
-  border-radius: 3px 3px 3px 3px;
-  margin-bottom: 20px;
+  border-radius: 0 3px 3px 0;
+  margin-top: 0;
 
   @include respon(desktop) {
     padding-left: 4rem;
@@ -129,12 +115,12 @@
 }
 
 /*  SECTION ABOUT */
-.section__about {
-}
+// .section__about {
+// }
 
 .about__container {
   padding: 0 2.5rem;
-  // text-align: justify;
+
   @include respon(desktop) {
     padding: 0 4rem;
   }
@@ -149,15 +135,11 @@
   @include respon(desktop) {
     font-size: 2rem;
   }
-  /* or 150% */
-  /* text-align: justify; */
 }
 
 /* SECTION DEPARTEMEN */
 .section__departemen {
   padding: 2.5rem 2.5rem 3rem 2.5rem;
-  /* background-color: aquamarine; */
-  // height: 60rem;
   overflow: hidden;
   position: relative;
 
@@ -216,7 +198,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: .5rem; */
 
   border: 2.5px solid #f2f2f2;
 
@@ -225,7 +206,6 @@
     padding-top: 40px;
     margin-top: 40px;
   }
-  // box-shadow: 0.5rem 0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
 .departemen__card-image-container {
@@ -273,10 +253,14 @@
   width: 20rem;
   height: 20rem;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 90%;
-  left: 18%;
+  bottom: -50px;
+  left: -40px;
   z-index: 0;
+
+  @include respon(desktop) {
+    bottom: -50px;
+    left: -40px;
+  }
 }
 
 .departemen__circle--sm {
@@ -285,10 +269,14 @@
   width: 10rem;
   height: 10rem;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 43%;
-  left: 98%;
+  bottom: 320px;
+  right: -40px;
   z-index: 0;
+
+  @include respon(desktop) {
+    top: 150px;
+    right: -25px;
+  }
 }
 /* SECTION BANNER */
 
@@ -340,7 +328,6 @@
 
 .join-us__button-group {
   width: 100%;
-  // margin: auto;
   color: coral;
   text-align: center;
   padding: 0 8.5rem;
@@ -360,7 +347,7 @@
 .join-us__button:hover {
   text-decoration: none;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   border-radius: 0.5rem;
   display: block;
@@ -374,14 +361,13 @@
 .join-us__button-join {
   margin-bottom: 1.5rem;
   background-color: rgb(40, 170, 73);
-  box-shadow: 0 10px 20px rgba(40, 170, 73, 0.19),
-    0 6px 6px rgba(40, 170, 73, 0.23);
+  box-shadow: 0 1px 3px rgba(40, 170, 73, 0.4),
+    0 1px 2px rgba(40, 170, 73, 0.23);
 
   @include respon(desktop) {
     margin-bottom: unset;
     margin-right: 3rem;
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -389,11 +375,10 @@
   background-color: rgb(37, 185, 74);
   transition: all 0.2s;
   transform: scale(1.05);
-  box-shadow: 0 2.5px 5px rgba(37, 185, 74, 0.025),
+  box-shadow: 0 2.5px 5px rgba(37, 185, 74, 0.25),
     0 7.5px 20px rgba(37, 185, 74, 0.2);
   @include respon(desktop) {
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -401,10 +386,11 @@
   transition: all 0.2s;
   transform: scale(0.95);
   background-color: rgb(40, 170, 73);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(37, 185, 74, 0.12),
+    0 1px 2px rgba(37, 185, 74, 0.24);
+
   @include respon(desktop) {
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -415,7 +401,6 @@
 
   @include respon(desktop) {
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -426,7 +411,6 @@
   box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.025), 0 7.5px 20px rgba(0, 0, 0, 0.2);
   @include respon(desktop) {
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -436,7 +420,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   @include respon(desktop) {
     padding: 0.8rem 1.7rem;
-    // padding: 2rem;
   }
 }
 
@@ -446,14 +429,9 @@
   width: 20rem;
   height: 20rem;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 95%;
-  left: 85%;
+  bottom: -60px;
+  right: -60px;
   z-index: 0;
-
-  @include respon(desktop) {
-    transform: translate(20%, -50%);
-  }
 }
 
 /* SECTION FOOTER */
@@ -461,8 +439,6 @@
 
 /* 
   *
-  * 
   * END OF HOMEPAGE PAGE
-  *
   *
   */
