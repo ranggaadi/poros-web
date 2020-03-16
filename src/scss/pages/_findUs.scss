@@ -1,0 +1,151 @@
+/* 
+*
+* FIND US SECTION
+*
+*/
+
+.section__find-us {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh - #{$navbar-mobile-height} - #{$footer-mobile-height});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respon(lg) {
+    min-height: calc(100vh - #{$navbar-mobile-height} - #{$footer-desktop-height});
+  }
+
+  & h4 {
+    margin-bottom: 5px;
+  }
+}
+
+/* ILLUSTRATION  */
+
+.find-us__illustration-container {
+  margin: auto;
+  padding: 0 0 2.5rem 0;
+  width: 165px;
+
+  @include respon(lg) {
+    padding: 0 3rem 0 0;
+    margin: 0;
+    max-width: 36rem;
+    width: 36rem;
+  }
+}
+
+.find-us__illust {
+  width: 100%;
+  height: auto;
+}
+
+/* FIND US CONTAINER  */
+
+.find-us__main-content {
+  @include respon(lg) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+.find-us__content {
+  padding: 0 2.5rem;
+
+  @include respon(lg) {
+    padding: 0;
+  }
+}
+
+.find-us__content--main {
+  margin-bottom: 2rem;
+}
+
+.find-us__content-container {
+  margin-bottom: 4rem;
+
+  @include respon(lg) {
+    margin-bottom: unset;
+    max-width: 35rem;
+  }
+}
+
+.find-us__title {
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  @include respon(lg) {
+    font-size: 3.5rem;
+  }
+}
+
+.find-us__caption {
+  font-size: 1.65rem;
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+.find-us__address {
+  margin-bottom: 2rem;
+}
+
+.find-us__address-title,
+.find-us__email-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: black;
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+.find-us__address-caption,
+.find-us__email-caption {
+  margin: 0;
+  font-size: 1.65rem;
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+.find-us__address-link {
+  color: rgb(40, 170, 73);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.65rem;
+
+  &:hover {
+    color: rgb(37, 185, 74);
+    text-decoration: none;
+  }
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+.find-us__circle--md {
+  background-color: rgb(255, 214, 51);
+  border-radius: 50%;
+  width: 16.9rem;
+  height: 16.9rem;
+  position: absolute;
+  // transform: translate(-50%, -75%);
+  bottom: -70px;
+  right: -30px;
+
+  @include respon(lg) {
+    width: 20rem;
+    height: 20rem;
+  }
+}

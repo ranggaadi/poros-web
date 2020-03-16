@@ -1,0 +1,40 @@
+.section__footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer-container {
+  margin: 0 auto;
+  height: $footer-mobile-height;
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respon(lg) {
+    height: $footer-desktop-height;
+    padding: 2.5rem 4rem;
+  }
+}
+
+.foooter__copyright {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  
+  @include respon(lg) {
+    font-size: 1.6rem;
+  }
+}
+
+.footer__icon {
+  width: auto;
+  height: 2rem;
+  margin-left: 10px;
+
+  @include respon(lg) {
+    margin-left: 15px;
+    height: 2.5rem;
+  }
+}
