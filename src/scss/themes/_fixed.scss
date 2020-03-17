@@ -1,0 +1,34 @@
+.content {
+  max-width: 1366px;
+  width: 1366px;
+
+  margin: 0 auto;
+}
+
+.navbar-container {
+  max-width: 1366px;
+  width: 1366px;
+}
+
+.footer-container {
+  max-width: 1366px;
+  width: 100%;
+
+  @include respon(lg) {
+    padding: 2.5rem 1rem;
+  }
+}
+
+.content {
+  max-width: 1366px;
+  width: 100%;
+}
+
+
+// body {
+//   background-color: whitesmoke;
+// }
+
+// .navbar {
+//   background-color: whitesmoke;
+// }

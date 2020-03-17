@@ -5,8 +5,9 @@
 /coverage
 
 # production
-/build
-/assets/css/style.css
+/dist/*
+/app/*.html
+/app/css/main.css
 
 # misc
 .DS_Store

@@ -1,0 +1,263 @@
+// ILLUSTRATION //
+.about__illustration-container {
+  max-width: 200px;
+  margin: auto;
+  padding: 2.5rem 0;
+
+  @include respon(lg) {
+    max-width: 25rem;
+    width: 25rem;
+    margin: 0;
+    padding: 0 3rem 0 0;
+  }
+}
+
+.about__illust {
+  width: 100%;
+  height: auto;
+}
+
+//* ABOUT CONTAINER  */
+
+.about__responsive-container {
+  &--1 {
+    @include respon(lg) {
+      width: 60%;
+      height: 95vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: auto;
+    }
+  }
+
+  &--2 {
+    @include respon(lg) {
+      height: 80vh;
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  &--3 {
+    @include respon(lg) {
+      padding: 5rem 0;
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &--4 {
+    @include respon(lg) {
+      width: 80%;
+      margin: auto;
+      padding: 0 0 5rem 0;
+    }
+  }
+}
+
+.about__content-container {
+  padding: 0 2.5rem 0rem 2.5rem;
+}
+
+// ABOUT CONTENT
+.about__content--main {
+  margin-bottom: 2rem;
+
+  @include respon(lg) {
+    margin-bottom: unset;
+    max-width: 35rem;
+  }
+}
+
+.about__title {
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  @include respon(lg) {
+    font-size: 3.5rem;
+  }
+}
+
+.about__caption {
+  font-size: 1.65rem;
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+// ABOUT CAROUSEL
+.about__carousel {
+  @include respon(lg) {
+    height: 80vh;
+    width: 100%;
+  }
+}
+
+.about__carousel-btn--hidden,
+.about__carousel-btn--hidden:hover,
+.about__carousel-btn--hidden:visited,
+.about__carousel-btn--hidden:link {
+  opacity: 0;
+}
+
+.about__carousel-indicators {
+  z-index: 1;
+  // @include respon(lg) {
+  //   top: ;
+  // }
+}
+
+.about__carousel-container {
+  margin: 3rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @include respon(lg) {
+    height: 100%;
+    width: auto;
+    margin: 0;
+  }
+}
+
+// ABOUT TUJUAN VISI MISI
+.about__card-container {
+}
+
+.about__card {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 2.5px solid #f2f2f2;
+  text-align: justify;
+}
+
+.about__card:not(:last-child) {
+  margin-bottom: 1rem;
+
+  @include respon(lg) {
+    margin: 0 0 2.5rem 0;
+  }
+}
+
+.about__card-title {
+  font-size: 1.5rem;
+  color: rgb(40, 170, 73);
+  font-weight: 700;
+
+  @include respon(lg) {
+    font-size: 2rem;
+  }
+}
+
+.about__card-caption {
+  font-size: 1.3rem;
+
+  @include respon(lg) {
+    font-size: 1.5rem;
+  }
+}
+
+.about__card-point-container {
+  display: flex;
+}
+
+.about__card-point-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.about__card-point-number {
+  margin: 0 1rem;
+}
+
+// ABOUT DEPARTEMEN.
+
+.about__departemen-container {
+  padding: 2.5rem 0;
+
+  @include respon(lg) {
+    padding: 0;
+  }
+}
+
+.about__departemen-title {
+  font-weight: 700;
+  color: rgb(40, 170, 73);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  @include respon(lg) {
+    font-size: 3.5rem;
+  }
+}
+
+.about__departemen-content {
+  @include respon(lg) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.about__img-bagan-container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0rem;
+
+  @include respon(lg) {
+    min-width: 30%;
+    margin: 0 2.5rem 0 0;
+  }
+}
+
+.about__img-bagan {
+  width: 100%;
+}
+
+.about__departemen-card {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 214, 51);
+  margin-top: 2rem;
+
+  @include respon(lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.about__departemen-paragraph {
+  font-size: 1.3rem;
+  text-align: justify;
+
+  @include respon(lg) {
+    font-size: 1.5rem;
+  }
+
+  &--1 {
+    margin-bottom: 2rem;
+  }
+}
+
+// ABOUT IMAGE BANNER
+
+.about__img-banner-container {
+  padding: 0 0 5rem 0;
+  width: 100%;
+  margin: auto;
+
+  @include respon(lg) {
+    width: 0;
+  }
+}
+
+.about__img-banner {
+  width: 100%;
+}

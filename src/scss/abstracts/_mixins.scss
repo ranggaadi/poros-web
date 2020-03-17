@@ -1,0 +1,38 @@
+/*
+VALUE PARAMETER:                ABAIKAN INI SLUR!!!
+-   phone
+-   tb-pot      //tablet potrait
+-   tb-land     //tablet landscape
+-   big-d       //big desktop wkwk
+//dan kita menggunakan em daripada rem karena em dan rem pada media query sama sama menganut pada 
+//default font-size browser yang bisa diatur oleh user jadi kita menggunakan em (standarnya)
+//karena 1rem dan 1em sama sama 16px (16px adalah default browser font-size)
+maka logic = $breakpoint / 16px = ${hasil}em
+URUTAN Menambah media query: base + typography -> layout & grid -> page layout -> component
+wkwk*/
+
+@mixin respon($breakpoint) {
+  @if $breakpoint == m {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xxl {
+    @media only screen and (min-width: 1366px) {
+      @content;
+    }
+  }
+}

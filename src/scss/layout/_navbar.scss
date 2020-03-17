@@ -1,0 +1,262 @@
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.navbar {
+  padding: 0.8rem 1.7rem;
+  background-color: white;
+  transition-duration: 0.3s;
+  height: $navbar-mobile-height;
+
+  @include respon(lg) {
+    height: $navbar-desktop-height;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar-brand {
+  width: 2.8rem;
+  height: auto;
+}
+
+.custom__navbar {
+  padding: 0.8rem 2.5rem;
+
+  @include respon(lg) {
+    padding: 1rem 4rem;
+  }
+}
+
+.custom__navbar-toggler {
+  border: none;
+  padding: 0;
+  &-icon {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+  }
+}
+
+.custom__navbar-nav {
+  text-align: center;
+}
+
+.custom__nav-item {
+  font-size: 1.5rem;
+
+  @include respon(lg) {
+    &:not(:last-child) {
+      margin: 0 2rem 0 0;
+    }
+  }
+}
+
+.custom__nav-link {
+  &:hover {
+    color: rgb(40, 170, 73);
+  }
+}
+
+.custom__button {
+  background-color: rgb(40, 170, 73);
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgb(37, 185, 74);
+    transform: scale(1.1);
+  }
+}
+
+// buat ngilangim EFFECT
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(40, 170, 73);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transition: all 0.4s ease;
+}
+
+.active-link {
+  color: black !important;
+}
+
+.navbar__logo--text {
+  font-weight: 700;
+  padding: 0 1rem;
+  font-size: 2rem;
+  position: absolute;
+}
+
+// HAMBURGER EFFECT
+.visually-hidden {
+  display: none;
+}
+
+.hamburger-toggler {
+  position: absolute;
+  right: 1rem;
+  margin-bottom: 0;
+  z-index: 3;
+}
+
+.hamburger-menu {
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.hamburger-active {
+  opacity: 1;
+  right: 0;
+}
+
+.hamburger-menu-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.hamburger-menu-link {
+  font-size: 2rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: all 0.4s ease;
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(40, 170, 73);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.hamburger-menu-button {
+  background-color: rgb(40, 170, 73);
+  border-radius: 0.3rem;
+  padding: 0.5rem 2rem;
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-color: rgb(37, 185, 74);
+    transform: scale(1.1);
+  }
+}

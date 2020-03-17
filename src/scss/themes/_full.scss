@@ -1,0 +1,25 @@
+.content {
+  
+}
+
+.navbar-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 100%;
+  width: 100%;
+
+  @include respon(lg) {
+    padding: 2.5rem 4rem;
+  }
+}
+
+// body {
+//   background-color: whitesmoke;
+// }
+
+// .navbar {
+//   background-color: whitesmoke;
+// }
